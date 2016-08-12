@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #555;
   line-height: 48px;
   display: inline;
 }
@@ -78,7 +78,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -97,26 +96,25 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #4a4a4a;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #337ab7;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #E74C3C;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #337ab7;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+  color: #4a4a4a;
 }
 
 .gray {
@@ -129,10 +127,11 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848;
+hr {
+  border-top: 5px solid #cac8c8;
 }
+
+/* TODO: Replace with image later */
 
 .flex-box {
   display: -webkit-flex;
@@ -156,6 +155,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  margin: 0 20px;
 }
 
 img {
@@ -164,10 +164,27 @@ img {
 
 span {
   padding: 5px;
+  color: black;
+}
+
+#logo {
+  padding: 0px;
+  width: 80%;
+  height: 80%;
 }
 
 #lets-connect {
   text-align: center;
+}
+
+/* Nav-bar */
+a.navbar-brand {
+  padding: 0 25px;
+}
+
+.navbar-nav>li>a{
+  padding: 20px 23px;
+  margin: 0;
 }
 
 /* Media queries to handle various device widths */

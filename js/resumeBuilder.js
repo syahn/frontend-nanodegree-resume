@@ -9,10 +9,10 @@ var bio = {
   		"github": "syahn",
   		"twitter": "@frankhaus",
       "blog": "http://syahn.com",
-  		"location": "SouSouth Korea"
+  		"location": "Seoul"
   	},
-  	"welcomeMessage": "Hello~",
-  	"skills": ["HTML/CSS", "JavaScript", "ReactJS", "nodeJS"],
+    	"welcomeMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed consequat mi. Nam nec posuere lorem. Morbi iaculis mauris in libero tincidunt, non gravida sem consequat. Aliquam erat volutpat. Curabitur elit sapien, tristique sed lacus vitae, iaculis fringilla est. Mauris nec auctor lacus. ",
+  	"skills": ["HTML/CSS", "JavaScript", "bootstrap", "ReactJS", "nodeJS"],
   	"bioPic": "images/profile.jpg"
 }
 
@@ -36,20 +36,15 @@ var education={
   		"school": "Udacity",
   		"dates": "2016/8",
   		"url": "http://udacity.com"
-  	}, {
-  		"title": "Udacity Nanodegree",
-  		"school": "Null",
-  		"dates": "2016/8",
-  		"url": "Udacity.com"
   	}]
 }
 
 var projects = {
   	"projects": [{
-  		"title": "member",
-  		"dates": "2016/8/10",
-  		"description": "my first projects",
-  		"images": ["images/fry.jpg"]
+  		"title": "Build a portfolio site",
+  		"dates": "2016/8/11",
+  		"description": "My first project in the Nanodegree of Udacity",
+  		"url": ["https://syahn.github.io/frontend-nanodegree-build_a_portfolio_site/"]
   	}]
 }
 
@@ -69,6 +64,23 @@ var work = {
 // 1.bio
 
 bio.display = function(){
+
+  // Skills
+  if (bio.skills.length > 0){
+    $("#header").prepend(HTMLskillsStart);
+    bio.skills.forEach(function(skill){
+      var formattedSkills = HTMLskills.replace("%data%", skill);
+      $("#skills").append(formattedSkills);
+    })
+  }
+
+  // Welcome message
+  var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+  $("#header").prepend(formattedWelcomeMsg);
+
+  // Biopic
+  var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+  $("#header").prepend(formattedBioPic);
 
   // Role
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -103,22 +115,6 @@ bio.display = function(){
   var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
   $("#topContacts").append(formattedLocation);
 
-  // Biopic
-  var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-  $("#header").append(formattedBioPic);
-
-  // Welcome message
-  var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-  $("#header").append(formattedWelcomeMsg);
-
-  // Skills
-  if (bio.skills.length > 0){
-    $("#header").append(HTMLskillsStart);
-    bio.skills.forEach(function(skill){
-      var formattedSkills = HTMLskills.replace("%data%", skill);
-      $("#skills").append(formattedSkills);
-    })
-  }
 };
 
 bio.display();
@@ -154,12 +150,12 @@ projects.display = function(){
     var formattedTitle= HTMLprojectTitle.replace("%data%", project.title);
     var formattedDates= HTMLprojectDates.replace("%data%", project.dates);
     var formattedDescription= HTMLprojectDescription.replace("%data%", project.description);
-    var formattedImages= HTMLprojectImage.replace("%data%", project.images);
+    var formattedUrl= HTMLprojectUrl.replace("%data%", project.url);
 
     $(".project-entry:last").append(formattedTitle);
     $(".project-entry:last").append(formattedDates);
     $(".project-entry:last").append(formattedDescription);
-    $(".project-entry:last").append(formattedImages);
+    $(".project-entry:last").append(formattedUrl);
   })
 }
 
