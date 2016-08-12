@@ -58,9 +58,11 @@ h3,
 h4,
 h5 {
   padding:10px 5%;
-
 }
 
+.education-entry h3 {
+  padding-left: 0;
+}
 
 .date-text {
   font-style: italic;
