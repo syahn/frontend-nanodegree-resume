@@ -117,8 +117,6 @@ bio.display = function(){
 
 };
 
-bio.display();
-
 
 // 2. Work
 work.display = function(){
@@ -138,8 +136,6 @@ work.display = function(){
   });
 };
 
-work.display();
-
 
 // 3. Projects
 
@@ -158,8 +154,6 @@ projects.display = function(){
     $(".project-entry:last").append(formattedUrl);
   })
 }
-
-projects.display();
 
 
 // 4. Education
@@ -201,9 +195,15 @@ education.display = function(){
   })
 }
 
-education.display();
-
 
 // 5. Map
 
 $("#mapDiv").append(googleMap);
+
+
+// 6. display
+
+bio.display();
+work.display();
+projects.display();
+education.display();
