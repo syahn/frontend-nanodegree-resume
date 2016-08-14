@@ -1,108 +1,95 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Resume</title>
+    <title>Resume</title>
 
-  <!-- Add latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Add latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-  <!-- Add fontawesome icons -->
-  <script src="https://use.fontawesome.com/79e30d6cf3.js"></script>
+    <!-- Add fontawesome icons -->
+    <script src="https://use.fontawesome.com/79e30d6cf3.js"></script>
 
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCCmDMMx6JLn20SBEsurFIdSgzGEea6MRM"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCCmDMMx6JLn20SBEsurFIdSgzGEea6MRM"></script>
 
-  <!-- Add bootstrap JavaScript-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width">
+    <!-- Add bootstrap JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img id="logo" src="images/frankhaus_logo.svg" onerror="this.src='images/frankhaus_logo.png'" alt="brand">
-        </a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#projects">PROJECTS<span class="sr-only"></span></a></li>
-      </ul>
-    </div><!-- /.container-fluid -->
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="images/frankhaus_logo.svg" onerror="this.src='images/frankhaus_logo.png'" alt="brand">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#projects">PROJECTS<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-  <div id="main">
-    <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
+    <div id="main">
+        <div id="header" class="center-content clear-fix">
+            <ul id="topContacts" class="flex-box"></ul>
+        </div>
+        <div style="clear: both;"></div>
+        <div id="workExperience" class="gray">
+            <h2>Work Experience</h2>
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+        </div>
+        <div id="education" class="gray">
+            <h2>Education</h2>
+        </div>
+        <div id="mapDiv">
+            <h2>Where I've Lived and Worked</h2>
+        </div>
+        <div id="lets-connect" class="dark-gray">
+            <h2 class="bg-primary center-text">Let's Connect</h2>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
+        </div>
     </div>
-    <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="bg-primary center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-            <a href="https://www.facebook.com/sy.ahn25">
-              <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/syahn">
-              <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="https://syahn.com">
-              <i class="fa fa-wordpress fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:sy.ahn25@gmail.com?Subject=Hello%20">
-              <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/frank_haus">
-              <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-            </a>
-      </ul>
-    </div>
-  </div>
 
 
-  <script src="js/resumeBuilder.js"></script>
+    <script src="js/resumeBuilder.js"></script>
 
-  <script>
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
+    <script>
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
