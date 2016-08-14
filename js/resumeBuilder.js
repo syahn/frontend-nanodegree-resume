@@ -7,12 +7,12 @@ var bio = {
   		"mobile": "+82-10-9508-0900",
   		"email": "sy.ahn25@gmail.com",
   		"github": "syahn",
-  		"twitter": "@frankhaus",
+  		"twitter": "@frank_haus",
       "blog": "http://syahn.com",
   		"location": "Seoul"
   	},
     	"welcomeMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed consequat mi. Nam nec posuere lorem. Morbi iaculis mauris in libero tincidunt, non gravida sem consequat. Aliquam erat volutpat. Curabitur elit sapien, tristique sed lacus vitae, iaculis fringilla est. Mauris nec auctor lacus. ",
-  	"skills": ["HTML/CSS", "JavaScript", "bootstrap", "ReactJS", "nodeJS"],
+  	"skills": ["HTML/CSS", "JavaScript", "bootstrap", "ReactJS", "nodeJS", "Sketch"],
   	"bioPic": "images/profile.jpg"
 }
 
@@ -24,13 +24,7 @@ var education={
   		"dates": "2010-3 ~ ",
   		"url": "skku.edu",
   		"majors": ["Oriental philosophy", "Computer Science"]
-  	},{
-      "name": "Sungkwang Highschool",
-  		"location": "Daegu",
-  		"dates": "2007-3 ~ 2010-3",
-  		"url": "skku.edu",
-  		"majors": ["Oriental philosophy", "Computer Science"]
-    }],
+  	}],
   	"onlineCourses": [{
   		"title": "Front-end Nanodegree",
   		"school": "Udacity",
@@ -42,7 +36,7 @@ var education={
 var projects = {
   	"projects": [{
   		"title": "Build a portfolio site",
-  		"dates": "2016/8/11",
+  		"dates": "2016-8-11",
   		"description": "My first project in the Nanodegree of Udacity",
   		"url": ["https://syahn.github.io/frontend-nanodegree-build_a_portfolio_site/"]
   	}]
@@ -53,8 +47,8 @@ var work = {
   		"employer": "청년장사꾼",
   		"title": "manager",
   		"location": "seoul",
-  		"dates": "In progress",
-  		"description": "young seller"
+  		"dates": "2013-8 ~ 2014-12",
+  		"description": "I've worked in the food comapany which runs several pubs at the same time."
   	}]
 }
 
