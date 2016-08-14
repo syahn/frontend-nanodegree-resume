@@ -38,7 +38,7 @@ var projects = {
         "dates": '2016-8-11',
         "description": 'My first project in the Nanodegree of Udacity',
         "url": 'https://syahn.github.io/frontend-nanodegree-build_a_portfolio_site/',
-        "images": ['http://placekitten.com/100/100', 'http://placekitten.com/200/100']
+        "images": ['https://placekitten.com/100/100', 'https://placekitten.com/200/100']
     }]
 };
 
